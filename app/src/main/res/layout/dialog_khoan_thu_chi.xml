@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/tvTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Khoản Thu Chi"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edtMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:drawableRight="@drawable/ic_info"
+        android:ems="10"
+        android:background="#ECEBE6"
+        android:hint="Mô Tả"
+        android:inputType="text"
+        android:paddingHorizontal="8dp" />
+
+    <EditText
+        android:id="@+id/edtNgayThang"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ECEBE6"
+        android:drawableRight="@drawable/ic_calendar_today"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Ngày Tháng"
+        android:paddingHorizontal="8dp"/>
+
+    <EditText
+        android:id="@+id/edtSoTien"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ECEBE6"
+        android:drawableRight="@drawable/ic_money"
+        android:ems="10"
+        android:hint="Số Tiền"
+        android:inputType="number|numberDecimal"
+        android:paddingHorizontal="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDongY"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="8dp"
+            android:text="Đồng Ý"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:text="Hủy"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+</LinearLayout>

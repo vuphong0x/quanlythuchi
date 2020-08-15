@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="?attr/colorPrimary">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabKhoanChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoản Chi"
+            android:icon="@drawable/ic_baseline_archive_24"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabLoaiChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại Chi"
+            android:icon="@drawable/ic_collection"/>
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPager"/>
+</LinearLayout>

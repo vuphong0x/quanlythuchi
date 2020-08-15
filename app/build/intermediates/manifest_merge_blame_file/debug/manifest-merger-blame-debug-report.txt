@@ -1,0 +1,47 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.quanlythuchi"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:4:5-18:19
+12        android:allowBackup="true"
+12-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:5:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] C:\Users\vupho\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/unnamed"
+15-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:6:9-39
+16        android:label="Quản Lý Thu Chi"
+16-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:7:9-40
+17        android:roundIcon="@mipmap/unnamed"
+17-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:8:9-44
+18        android:supportsRtl="true"
+18-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:9:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:10:9-40
+21        <activity android:name="com.example.quanlythuchi.MainActivity" >
+21-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:11:9-17:20
+21-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:11:19-47
+22            <intent-filter>
+22-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:12:13-16:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:13:17-69
+23-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:13:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:15:17-77
+25-->D:\GiaoDienAndroid\QuanLyThuChi\app\src\main\AndroidManifest.xml:15:27-74
+26            </intent-filter>
+27        </activity>
+28    </application>
+29
+30</manifest>

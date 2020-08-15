@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:weightSum="5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="Thống Kê"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:stretchColumns="1"
+        android:id="@+id/tableLayout"
+        android:layout_weight="2">
+        <TableRow>
+            <TextView
+                android:text="Tổng Thu"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/tvTongThu"
+                android:text="0.0 VNĐ"
+                android:textSize="18sp"
+                android:paddingHorizontal="32dp"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Tổng Chi"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/tvTongChi"
+                android:text="0.0 VNĐ"
+                android:textSize="18sp"
+                android:paddingHorizontal="32dp"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:gravity="center"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Còn Lại"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/tvConLai"
+                android:text="0.0 VNĐ"
+                android:textSize="18sp"
+                android:paddingHorizontal="32dp"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
